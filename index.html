@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danilyn's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Dani's Portfolio</div>
+
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('about')">About Me</a></li>
+            <li><a href="#" onclick="showSection('facts')">Facts</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="home" class="content-section active">
+        <div class="home-content">
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Hello, I'm <span>Danilyn</span></h1>
+
+            <p>
+                But you can call me <strong>Dani!</strong>
+            </p>
+
+            <p class="description">
+                I am an Information Technology student who is interested
+                in technology, programming, and web development.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- About Me Section -->
+    <section id="about" class="content-section">
+        <div class="section-content">
+            <h1>About Me</h1>
+
+            <div class="card">
+                <p>
+                    I am a Bachelor of Science in Information Technology
+                    student interested in technology, programming, and
+                    web development.
+                </p>
+
+                <p>
+                    I enjoy learning new technologies and developing
+                    projects that can improve my skills and knowledge
+                    in the field of Information Technology.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Facts Section -->
+    <section id="facts" class="content-section">
+        <div class="section-content">
+            <h1>Some Facts About Me!</h1>
+
+            <div class="facts-container">
+
+                <div class="facts-card">
+                    <h2>I love cats</h2>
+                    <p>I have 3 cats. Named Callie, Shooky and Chimmy</p>
+                </div>
+
+                <div class="facts-card">
+                    <h2>My favorite color is pink</h2>
+                    <p>Pink symbolizes romance, kindness, compassion and gentleness.</p>
+                </div>
+
+                <div class="facts-card">
+                    <h2>20</h2>
+                    <p>I am 20 years of age.</p>
+                </div>
+
+                <div class="facts-card">
+                    <h2>Youngest</h2>
+                    <p>I am the youngest of 6 siblings.</p>
+                </div>
+
+                <div class="facts-card">
+                    <h2>I love to write poems</h2>
+                    <p>Because I can express how I feel.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+        <div class="section-content">
+            <h1>Contact Me</h1>
+
+            <div class="card">
+
+                <h2>Let's Connect!</h2>
+
+                <p>
+                    Feel free to reach out to me through the following:
+                </p>
+
+                <p>
+                    <strong>Email:</strong> djnibot05@gmail.com
+                </p>
+
+                <p>
+                    <strong>Facebook:</strong> Danilyn Nibot
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Danilyn's Personal Portfolio</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        function showSection(sectionId) {
+
+            // Hide all sections
+            const sections = document.querySelectorAll(".content-section");
+
+            sections.forEach(function(section) {
+                section.classList.remove("active");
+            });
+
+            // Show selected section
+            document.getElementById(sectionId).classList.add("active");
+
+        }
+
+    </script>
+
+</body>
+</html>
